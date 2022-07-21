@@ -28,7 +28,7 @@ class RootListController: HBRootListController {
 		let appearanceSettings = HBAppearanceSettings()
 		appearanceSettings.tintColor = UIColor(red: 0.4, green: 0, blue: 0.4, alpha: 1)
 		
-		self.navigationItem.rightBarButtonItem = UIBarButtonItem(title: "Apply", style: .done, target: self, action: #selector(respring))
+// 		self.navigationItem.rightBarButtonItem = UIBarButtonItem(title: "Apply", style: .done, target: self, action: #selector(respring))
 	}
 	
 	@objc func respring() {
