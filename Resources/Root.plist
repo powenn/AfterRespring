@@ -59,10 +59,6 @@
 			<string>selectedImage</string>
 			<key>usesPhotos</key>
 			<true/>
-			<key>usesVideos</key>
-			<false/>
-			<key>videoQuality</key>
-			<integer>0</integer>
 		</dict>
 		<dict>
 			<key>PostNotification</key>
@@ -73,14 +69,12 @@
 			<string>Custom Title</string>
 			<key>key</key>
 			<string>customTitle</string>
+			<key>keyboard</key>
+			<string></string>
+			<key>prompt	</key>
+			<string></string>
 			<key>placeholder</key>
 			<string>Enter any text to custom title</string>
-			<key>prompt</key>
-			<string></string>
-			<key>okTitle</key>
-			<string>Done</string>
-			<key>cancelTitle	</key>
-			<string>Cancel</string>
 		</dict>
 		<dict>
 			<key>cell</key>
