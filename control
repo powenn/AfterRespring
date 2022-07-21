@@ -1,0 +1,9 @@
+Package: com.powen.afterrespring
+Name: AfterRespring
+Version: 0.0.1
+Architecture: iphoneos-arm
+Description: Show your favorite photo after respring
+Maintainer: powen
+Author: powen
+Section: Tweaks
+Depends: ${ORION}, com.mrgcgamer.libgcuniversal, firmware (>= 13.0)
