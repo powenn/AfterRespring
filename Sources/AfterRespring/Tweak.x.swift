@@ -10,9 +10,12 @@ class SBHomeScreenViewHook: ClassHook<UIViewController> {
     
     func viewDidAppear(_ arg0: Any?) {
         orig.viewDidAppear(arg0)
-        let myAlert = UIAlertController(title: nil, message: nil, preferredStyle: .actionSheet)
         
         if let myImage = UIImage(contentsOfFile: "/var/mobile/Library/Preferences/com.powen.afterrespring/selectedImage-IMG") {
+            var myTitle:String? = nil
+            Preferences.shared.customTitle as! String != "" ? myTitle = Preferences.shared.customTitle as? String : nil
+            
+            let myAlert = UIAlertController(title: myTitle, message: nil, preferredStyle: .actionSheet)
             let smallImage = resizeImage(image: myImage, width: UIScreen.main.bounds.width-40)
             let action = UIAlertAction(title: "", style: .default)
             action.setValue(smallImage.withRenderingMode(UIImage.RenderingMode.alwaysOriginal), forKey: "image")
