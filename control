@@ -6,4 +6,4 @@ Description: Show your favorite photo after respring
 Maintainer: powen
 Author: powen
 Section: Tweaks
-Depends: ${ORION}, com.mrgcgamer.libgcuniversal, firmware (>= 13.0)
+Depends: ${ORION}, com.mrgcgamer.libgcuniversal, ws.hbang.common (>= 1.17), firmware (>= 13.0)
