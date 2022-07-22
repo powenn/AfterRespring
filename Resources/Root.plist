@@ -81,6 +81,18 @@
 		<dict>
 			<key>cell</key>
 			<string>PSGroupCell</string>
+		</dict>
+		<dict>
+			<key>action</key>
+			<string>respring</string>
+			<key>cell</key>
+			<string>PSButtonCell</string>
+			<key>label</key>
+			<string>Apply</string>
+		</dict>
+		<dict>
+			<key>cell</key>
+			<string>PSGroupCell</string>
 			<key>label</key>
 			<string>Links</string>
 		</dict>
@@ -100,7 +112,7 @@
 			<key>cell</key>
 			<string>PSGroupCell</string>
 			<key>footerText</key>
-			<string>Thanks to Paisseon for codes reference</string>
+			<string>Thanks to Paisseon for codes reference and helping</string>
 		</dict>
 	</array>
 	<key>title</key>

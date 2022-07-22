@@ -30,7 +30,6 @@ class RootListController: HBRootListController { // PSListController  HBRootList
 //        let tap = UITapGestureRecognizer(target: self.specifiers, action: #selector(dismissKeyboard))
 //        view.addGestureRecognizer(tap)
         self.table.keyboardDismissMode = .onDrag
-//        self.navigationItem.rightBarButtonItem = UIBarButtonItem(title: "Apply", style: .done, target: self, action: #selector(respring))
     }
 	
 	@objc func respring() {
@@ -41,6 +40,6 @@ class RootListController: HBRootListController { // PSListController  HBRootList
 //        view.endEditing(true)
 //    }
 //    override func _returnKeyPressed(_ arg1: Any!) {
-//            self.view.endEditing(true)
+//            view.endEditing(true)
 //        }
 }

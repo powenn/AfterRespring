@@ -1,6 +1,6 @@
 Package: com.powen.afterrespring
 Name: AfterRespring
-Version: 0.0.1
+Version: 0.0.2
 Architecture: iphoneos-arm
 Description: Show your favorite image after respring
 Maintainer: powen
