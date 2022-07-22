@@ -6,7 +6,7 @@ import Cephei
 import UIKit
 import CoreGraphics
 
-class RootListController: HBRootListController {
+class RootListController: HBRootListController { // PSListController  HBRootListController
 	override var specifiers: NSMutableArray? {
 		get {
 			if let specifiers = value(forKey: "_specifiers") as? NSMutableArray {
@@ -27,11 +27,20 @@ class RootListController: HBRootListController {
 		
 		let appearanceSettings = HBAppearanceSettings()
 		appearanceSettings.tintColor = UIColor(red: 0.4, green: 0, blue: 0.4, alpha: 1)
-		
-		self.navigationItem.rightBarButtonItem = UIBarButtonItem(title: "Apply", style: .done, target: self, action: #selector(respring))
-	}
+//        let tap = UITapGestureRecognizer(target: self.specifiers, action: #selector(dismissKeyboard))
+//        view.addGestureRecognizer(tap)
+        self.table.keyboardDismissMode = .onDrag
+//        self.navigationItem.rightBarButtonItem = UIBarButtonItem(title: "Apply", style: .done, target: self, action: #selector(respring))
+    }
 	
 	@objc func respring() {
 		HBRespringController.respring()
 	}
+//    @objc func dismissKeyboard() {
+//        //Causes the view (or one of its embedded text fields) to resign the first responder status.
+//        view.endEditing(true)
+//    }
+//    override func _returnKeyPressed(_ arg1: Any!) {
+//            self.view.endEditing(true)
+//        }
 }

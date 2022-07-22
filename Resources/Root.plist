@@ -43,6 +43,8 @@
 			<string>PSGroupCell</string>
 			<key>label</key>
 			<string>Configs</string>
+			<key>footerText</key>
+			<string>Drag down to dismiss keyboard</string>
 		</dict>
 		<dict>
 			<key>PostNotification</key>
@@ -73,8 +75,6 @@
 			<string></string>
 			<key>defaults</key>
 			<string>com.powen.afterrespring</string>
-			<key>keyboard</key>
-			<string></string>
 			<key>placeholder</key>
 			<string>Enter any text to custom title</string>
 		</dict>

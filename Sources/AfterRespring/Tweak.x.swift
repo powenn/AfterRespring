@@ -20,7 +20,7 @@ class SBHomeScreenViewHook: ClassHook<UIViewController> {
             let action = UIAlertAction(title: "", style: .default)
             action.setValue(smallImage.withRenderingMode(UIImage.RenderingMode.alwaysOriginal), forKey: "image")
             myAlert.addAction(action)
-            orig.target.present(myAlert, animated: true)
+            target.present(myAlert, animated: true)
         }
     }
     
@@ -36,7 +36,7 @@ func resizeImage(image: UIImage, width: CGFloat) -> UIImage {
     return newImage
 }
 
-class Chocola: Tweak {
+class AfterRespring: Tweak {
     required init() {
         if Preferences.shared.enabled.boolValue && FileManager.default.fileExists(atPath: "/var/mobile/Library/Preferences/com.powen.afterrespring/selectedImage-IMG") {
             Main().activate()
