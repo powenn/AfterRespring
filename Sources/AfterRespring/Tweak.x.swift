@@ -14,7 +14,7 @@ class SBHomeScreenViewHook: ClassHook<UIViewController> {
         if let myImage = UIImage(contentsOfFile: "/var/mobile/Library/Preferences/com.powen.afterrespring/selectedImage-IMG") {
             let myTitle = Preferences.shared.customTitle as! String
             let is_iPad = UIDevice.current.userInterfaceIdiom == .pad
-            let myAlert = UIAlertController(title: myTitle, message: nil, preferredStyle: .actionSheet)
+            let myAlert = UIAlertController(title: myTitle == "" ? nil : myTitle, message: nil, preferredStyle: .actionSheet)
             let smallImage = resizeImage(image: myImage, width: is_iPad ? (UIScreen.main.bounds.width / 2.7) : (UIScreen.main.bounds.width - 40))
             let action = UIAlertAction(title: "", style: .default)
             action.setValue(smallImage.withRenderingMode(UIImage.RenderingMode.alwaysOriginal), forKey: "image")
